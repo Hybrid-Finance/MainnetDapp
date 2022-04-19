@@ -21,6 +21,6 @@ var x = setInterval(function () {
     }
     if (minutes == 0 && seconds == 0) {
         console.log("Updating Balance...")
-        getBalance();
+        
     }
 }, 1000);
