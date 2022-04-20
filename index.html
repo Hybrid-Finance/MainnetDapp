@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/main-style.css" media="screen" />
+	<meta charset="UTF-8">
+	<title>Hybrid Finance - App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="main-background">
+		<div class="container">
+			<div class="menu-bar-left">
+				<img src="Images/logo.png" width="200px" height="auto"
+					alt="Hybrid Finance Logo - Passive Defi Income" />
+
+			</div>
+			<div class="menu-bar-right">
+				<div class="menu-tile"><a target="_blank" href="https://traderjoexyz.com/trade?outputCurrency=0x496e6f025ed7e799e43fd1babe61497e95677734#/">BUY TOKEN</a></div>
+				<div class="menu-tile discord"><a target="_blank" href="https://discord.com/invite/hybridfinance">JOIN DISCORD</a></div>
+				<div class="menu-tile" id="addToken">ADD TOKEN TO MY WALLET</div>
+				<div class="connect-button" id="prepare"><button id="btn-connect">Connect Wallet</button></div>
+				<div id="connected" style="display: none">
+					<button id="btn-disconnect">
+						Disconnect wallet
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="dapp-main">
+			<div class="balance">
+				<div class="main-value" id="balance">0.00</div>
+				<div class="sub-menu">BALANCE</div>
+			</div>
+			<div class="rewards">
+				<div class="main-value" id="dailyReward">0.0</div>
+				<div class="sub-menu">DAILY REWARDS</div>
+			</div>
+			<div class="rebase">
+				<div class="main-value"><span id="minutes">00</span>:<span id="seconds">00</span></div>
+				<div class="sub-menu">TIME TO REBASE</div>
+			</div>
+			<div class="price">
+				<div class="main-value" id="price">$0.00</div>
+				<div class="sub-menu">TOKEN PRICE</div>
+			</div>
+			<div class="treasury">
+				<div class="main-value" id="treasury">$000,000</div>
+				<div class="sub-menu">TREASURY BALANCE</div>
+			</div>
+			<div class="holders">
+				<div class="main-value" id="marketcap">$000,000</div>
+				<div class="sub-menu">MARKET CAP</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
+<script src="Script/data.js" type="module"></script>
+<script src="Script/ethereum.js" type="module"> </script>
+<script src="Script/timer.js" type="module"> </script>
+<script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/web3modal@1.9.5/dist/index.js"></script>
+<script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js">
+</script>
